@@ -1,9 +1,10 @@
 package com.example.userservice.dto;
 
-import lombok.Builder;
-import lombok.Data;
+import com.example.userservice.vo.ResponseOrder;
+import lombok.*;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * Class       : UserDto
@@ -12,7 +13,6 @@ import java.util.Date;
  * History     : [2022-06-13] - 조 준희 - Class Create
  */
 @Data
-@Builder
 public class UserDto {
     private String email;
     private String name;
@@ -21,4 +21,6 @@ public class UserDto {
     private Date createAt;
 
     private String encryptedPwd;
+
+    private List<ResponseOrder> orders;
 }

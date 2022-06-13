@@ -9,4 +9,5 @@ import org.springframework.data.repository.CrudRepository;
  * History     : [2022-06-13] - 조 준희 - Class Create
  */
 public interface UserRepository extends CrudRepository<UserEntity,Long> {
+    UserEntity findByUserId(String userId);
 }

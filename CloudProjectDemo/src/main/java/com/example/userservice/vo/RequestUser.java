@@ -1,6 +1,6 @@
 package com.example.userservice.vo;
 
-import lombok.Data;
+import lombok.*;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;

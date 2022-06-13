@@ -16,8 +16,7 @@ import javax.persistence.*;
  */
 @Entity
 @Table(name = "users")
-@Setter
-@NoArgsConstructor
+@Data
 public class UserEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -35,11 +34,4 @@ public class UserEntity {
     @Column(nullable = false, unique = true)
     private  String encryptedPwd;
 
-    @Builder
-    public UserEntity(String email, String name, String userId, String encryptedPwd) {
-        this.email = email;
-        this.name = name;
-        this.userId = userId;
-        this.encryptedPwd = encryptedPwd;
-    }
 }
