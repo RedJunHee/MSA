@@ -13,9 +13,9 @@ import reactor.core.publisher.Mono;
 
 /**
  * Class       : LoggingFilter
- * Author      : 조 준 희
+ * Author      : Jun's
  * Description : Class Description
- * History     : [2022-06-10] - 조 준희 - Class Create
+ * History     : [2022-06-10] - Jun's - Class Create
  */
 @Component
 @Slf4j

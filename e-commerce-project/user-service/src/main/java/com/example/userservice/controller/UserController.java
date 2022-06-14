@@ -28,7 +28,7 @@ import java.util.List;
  * History     : [2022-06-13] - 조 준희 - Class Create
  */
 @RestController
-@RequestMapping(value = "/user-service")
+@RequestMapping(value = "/")
 @Slf4j
 public class UserController {
     private Environment env;
