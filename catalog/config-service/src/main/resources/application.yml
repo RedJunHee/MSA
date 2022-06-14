@@ -5,9 +5,21 @@ server:
 spring:
   application:
     name: config-service
+  profiles:
+    active: native
   cloud:
     config:
       server:
-        git:
-#          uri: file://D:\InteliJ\MSA
-          uri: https://github.com/RedJunHee/MSA
+        native:
+          search-locations: file:///D:\InteliJ\config-native
+
+#git ??
+#spring:
+#  application:
+#    name: config-service
+#  cloud:
+#    config:
+#      server:
+#        git:
+##          uri: file://D:\InteliJ\MSA
+#          uri: https://github.com/RedJunHee/MSA
