@@ -9,4 +9,5 @@ spring:
     config:
       server:
         git:
-          uri: file://D:\InteliJ\MSA
+#          uri: file://D:\InteliJ\MSA
+          uri: https://github.com/RedJunHee/MSA
